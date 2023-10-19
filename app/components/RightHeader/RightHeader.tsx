@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function RightHeader(){
     return ( <div className="right-header header">
     <div className="header__burger">
@@ -10,9 +12,13 @@ export function RightHeader(){
         </form>
     </div>
     <div className="header_links">
-        <a className="link link-likes svg" href=""></a>
-        <a className="link link-favourites svg" href=""></a>
-        <a className="link link-dislikes svg" href=""></a>
+        <Link href="/Like" className="link link-likes svg">
+        </Link>
+        <Link href="/Favourites" className="link link-favourites svg">
+        </Link>
+        <Link href="/Dislikes" className="link link-dislikes svg" >
+        </Link>
+        
     </div>
 </div>)
 }

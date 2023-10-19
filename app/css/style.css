@@ -285,6 +285,7 @@ body{
     background-color: #FFF;
     margin-top: 10px;
     padding: 20px;
+    min-height: 770px;
 }
 
 .voting {
@@ -294,6 +295,7 @@ body{
 .content__header{
     display: flex;
     gap: 9px;
+    margin-bottom: 20px;
 }
 
 .sub-header {
@@ -403,10 +405,12 @@ body{
 
 
 .voting__logs {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     padding-top: 10px;
-    gap: 10px;
+    
+
+    /* gap: 10px; */
     
 }
 
@@ -415,8 +419,12 @@ body{
     display: flex;
     padding: 15px 20px 15px 15px;
     background: #F8F8F7;
-    
+    margin-bottom: 10px;
 }
+.logs__item:last-child{
+    margin-bottom: 0px;
+}
+
 .logs__time {
     border-radius: 5px;
     background: #FFF;
@@ -916,9 +924,6 @@ body{
 }
 
 .breeds{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     max-height: 770px;
     width: 100%;
 }
@@ -1170,6 +1175,34 @@ body{
     height: 20px;
 }
 
+
+/* ---------------------SEARCH--------------------- */
+
+.content__description {
+    color: #8C8C8C;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.name__breed{
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info__voting-favourites{
+    margin-top: 40px;
+}
+.info__no-found{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    background: #F8F8F7;
+    color: #8C8C8C;
+    font-size: 16px;
+    line-height: 150%
+}
 /* --------------Modal_Home------------ */
 
 
